@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ 
+ 
+
+<div class="topnav" id="myTopnav">
+  <a href="front.html" class="active">Empresa</a>
+  <a href="avaliacao.html">Avaliacao</a>
+  <a href="contato.html">Contato</a>
+  <a href="Equipe.html">Equipe</a>
+  <a href="local.html">Local</a>
+  <a href="procedimentos.html">Procedimentos</a>
+  <a href="sobre.html">Sobre</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="bodybox">
+  <div class="slideshow middle">
+
+    <div class="slides">
+      <input type="radio" name="r" id="r1" checked>
+      <input type="radio" name="r" id="r2">
+      <input type="radio" name="r" id="r3">
+      <input type="radio" name="r" id="r4">
+      <input type="radio" name="r" id="r5">
+      
+        <div class="slide s1">
+          <img src="images/slides1/img1.jpg" alt="aaaa">
+        </div>
+        <div class="slide">
+          <img src="images/slides1/img2.avif" alt="bbbb">
+        </div>
+        <div class="slide">
+          <img src="images/slides1/img3.png" alt="111">
+        </div>
+        <div class="slide">
+          <img src="images/slides1/img4.jpg" alt="222">
+        </div>
+        <div class="slide">
+          <img src="images/slides1/img5.avif" alt="3333">
+        </div>
+        
+  </div>
+  <div class="navigation">
+    <label for="r1" class="bar"></label>
+    <label for="r2" class="bar"></label>
+    <label for="r3" class="bar"></label>
+    <label for="r4" class="bar"></label>
+    <label for="r5" class="bar"></label>
+    
+      </div>
+    </div>
+    <div id="titulo">
+      <h2>Conheça nossa equipe</h2>
+    </div>
+    <div class="newbody">
+      <div class="card-wrapper">
+        <div class="equipe equipe-1">
+          <img src="images/equipe/camilasantos.png" alt="Camila" class="equipe-img">
+          <div class="equipe-info">
+            <h2>Dra. Camila Santos</h2>
+            <p>Especialista em estética</p>
+          </div>
+        </div>
+    
+        <div class="equipe equipe-2">
+          <img src="images/equipe/michaelchen.jpeg" alt="Chen" class="equipe-img">
+          <div class="equipe-info">
+            <h2>Dr. Michael Chen</h2>
+            <p>Especialista em estética</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  
+    <div id="titulo">
+      <h2>Saiba mais sobre os procedimentos</h2>
+    </div>
+<div class="body-slide">
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="images/slides2/img1.jpg" alt="">
+        <img src="images/slides2/img2.jpg" alt="">
+        <img src="images/slides2/img3.jpeg" alt="">
+        <img src="images/slides2/img4.png" alt="">
+        <img src="images/slides2/img5.jpg" alt="">
+        <img src="images/slides2/img6.jpg" alt="">
+        <img src="images/slides2/img7.jpg" alt="">
+        <img src="images/slides2/img8.jpg" alt="">
+        <img src="images/slides2/img9.webp" alt="">
+        <img src="images/slides2/img10.jpg" alt="">
+        <img src="images/slides2/img11.webp" alt="">
+        <img src="images/slides2/img12.webp" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+ 
+ 
+<section class="why-choose-us">
+  <div class="container">
+    <h2>Por que nos escolher?</h2>
+    <br>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>Especialista</h3>
+        <p>Nossa equipe é formada por especialistas altamente treinados e experientes em estética.</p>
+      </div>
+      <div class="benefit">
+        <h3>Inovações</h3>
+        <p>Estamos sempre em busca das últimas tendências e inovações na área para oferecer o melhor aos nossos clientes.</p>
+      </div>
+      <div class="benefit">
+        <h3>Ambiente Confortável</h3>
+        <p>Criamos um espaço acolhedor e relaxante, onde você pode se sentir à vontade enquanto cuida da sua beleza e bem-estar.</p>
+      </div>
+      <div class="benefit">
+        <h3>Cuidado Sob Medida</h3>
+        <p>Cada paciente é tratado como único! Personalizamos cada plano de tratamento para atender às suas necessidades e objetivos específicos, assegurando que você receba o que há de melhor.</p>
+      </div>
+      <div class="benefit">
+        <h3>Resultados Eficazes</h3>
+        <p>Oferecemos soluções estéticas que proporcionam melhorias visíveis e significativas no bem-estar dos nossos clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+ 
+      
+<script>
+    
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+  <script>var copy =document.querySelector(".logos-slide").cloneNode(true);
+  document.querySelector(".logos").appendChild(copy);
+  
+</script>
+<footer>
+  <div id="footer_content">
+    <div id="footer_contacts">
+      <h1>Empresa</h1>
+      <p>Descubra sua melhor versão </p>
+
+      <div id="footer_social_media">
+         <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#" class="footer-link" id="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+       </a>
+        <a href="#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+         </a>
+         
+      </div>
+    </div>
+    <ul class="footer-list">
+      <li>
+        <h3>Conheca mais</h3>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Equipe</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Procedimentos</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Localizacao</a>
+      </li>
+      
+
+    </ul>
+
+    <ul class="footer-list" id="week">
+      <li>
+        <h3>Horário de Funcionamento</h3>
+      </li>
+          <li class="hour">Segunda a Sexta: 9h - 19h</li>
+          <li class="hour">Sábado: 9h - 14h</li>
+          <li class="hour">Domingo: Fechado</li>
+          
+      
+
+    </ul>
+    <div id="footer_subscribe">
+      <h3>Inscreva-se</h3>
+      <p>digite seu e-mail para ser notificado sobre nossas ofertas e novidades
+      </p>
+
+      <div id="input_group">
+        <input type="email" id="email">
+        <button>
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </div>
+    </div>
+    
+      
+    
+  </div>
+    <div id="footer_copyright">
+      &#169
+      2024 all rights reserved
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>
+
